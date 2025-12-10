@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Upload Project</title>
+
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">Portofolio</a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="project.html">Project</a>
+        <a href="upload.html">Upload</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="pricing-section">
+    <h1 class="pricing-title">Daftar Harga Kerja Sama</h1>
+
+    <div class="pricing-container">
+
+        <div class="pricing-box">
+            <h3>Jasa Pembuatan Website</h3>
+            <p class="price">Rp 500.000 – Rp 2.000.000</p>
+            <ul>
+                <li>Website responsif</li>
+                <li>Free revisi 2x</li>
+                <li>Integrasi basic UI</li>
+            </ul>
+            <a href="contact.html" class="price-btn">Hubungi Saya</a>
+        </div>
+
+        <div class="pricing-box">
+            <h3>Design UI/UX</h3>
+            <p class="price">Rp 200.000 – Rp 750.000</p>
+            <ul>
+                <li>Full Figma Design</li>
+                <li>User Flow + Prototype</li>
+                <li>Free revisi 1x</li>
+            </ul>
+            <a href="contact.html" class="price-btn">Hubungi Saya</a>
+        </div>
+
+        <div class="pricing-box">
+            <h3>Fix atau Perbaikan Website</h3>
+            <p class="price">Rp 100.000 – Rp 400.000</p>
+            <ul>
+                <li>Perbaikan error</li>
+                <li>Optimasi tampilan</li>
+                <li>Penambahan fitur kecil</li>
+            </ul>
+            <a href="contact.html" class="price-btn">Hubungi Saya</a>
+        </div>
+
+    </div>
+</section>
+
+
+<div class="upload-page-container">
+    <h1>Upload Project</h1>
+    <h3>Pastikan untuk bekerjasama atau menjoki tolong hubungi contact terlebih dahulu, Terimakasih</h3>
+    <p>Silakan unggah proyek Anda menggunakan formulir di bawah ini untuk bekerjasama</p>                                         
+
+    <form action="#" method="POST" class="upload-form">
+
+        <label>Upload File Project (zip):</label><br>
+        <input 
+            type="hidden"
+            role="uploadcare-uploader"
+            data-public-key="21b5b13e992a9fac4be9"
+            data-tabs="file url"
+            data-multiple="false"
+        >
+        <br><br>
+
+        <label>Project Name:</label>
+        <input type="text" name="project_name" required>
+
+        <label>Project Description:</label>
+        <input type="text" name="project_desc" required>
+
+        <button type="submit">Kirim Project</button>
+
+    </form>
+</div>
+
+</body>
+</html>

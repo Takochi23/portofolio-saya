@@ -40,6 +40,8 @@ html {
 
 body {
     color: var(--text-color);
+    background: linear-gradient(180deg, var(--lol-color), #fff8e7);
+    background-attachment: fixed;
 }
 
 section {
@@ -479,4 +481,179 @@ section.about > div {
     transform: scale(1.05) translateY(-5px); 
     box-shadow: 0 8px 25px rgba(255, 200, 87, 0.4);
     background: #ffd16a;
+}
+
+.pricing-section {
+    padding: 6rem 7%;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: -10rem;
+}
+
+.pricing-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 10rem;
+    letter-spacing: 1px;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.pricing-box {
+    background: rgba(255, 255, 255, 0.18);
+    padding: 3rem 2.5rem;
+    border-radius: 2.2rem;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transition: 0.35s ease;
+}
+
+.pricing-box:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.18);
+    border-color: #ffc857;
+}
+
+.pricing-box h3 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+
+.pricing-box .price {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #ffc857;
+    margin: 1.5rem 0 2.5rem;
+}
+
+.pricing-box ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 3rem;
+}
+
+.pricing-box ul li {
+    font-size: 1.55rem;
+    color: var(--bg-color);
+    margin-bottom: 0.8rem;
+}
+
+/* Tombol Hubungi */
+.price-btn {
+    display: inline-block;
+    padding: 1.1rem 2.6rem;
+    background: #ffc857;
+    color: var(--main-color);
+    font-weight: 800;
+    border-radius: 4rem;
+    transition: 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.price-btn:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255,200,87,0.45);
+}
+
+.upload-page-container {
+    padding-top: -5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.upload-page-container h1 {
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: var(--main-color);
+    margin-top: 2rem;
+}
+
+.upload-page-container h3,
+.upload-page-container p {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: center;
+    max-width: 800px;
+}
+
+.upload-form {
+    width: 100%;
+    max-width: 650px;
+    padding: 3.8rem;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+.upload-form label {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.upload-form input[type="text"] {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.32);
+    backdrop-filter: blur(6px);
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    margin-bottom: 2.2rem;
+    transition: 0.3s ease;
+}
+
+.upload-form input[type="text"]:focus {
+    border-color: #ffc857;
+    transform: scale(1.03);
+}
+
+.upload-form button {
+    width: 100%;
+    padding: 1.6rem;
+    font-size: 1.9rem;
+    font-weight: 800;
+    background: #ffc857;
+    color: var(--main-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.upload-form button:hover {
+    transform: scale(1.05) translateY(-2px);
+    background: #ffd36c;
+    box-shadow: 0 10px 25px rgba(255,200,87,0.45);
+}
+
+@media (max-width: 480px) {
+    .pricing-title {
+        font-size: 3.3rem;
+    }
+
+    .upload-page-container h1 {
+        font-size: 3.2rem;
+    }
+
+    .upload-form {
+        padding: 2.6rem;
+    }
 }
