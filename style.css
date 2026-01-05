@@ -579,6 +579,22 @@ section.about > div {
     margin-top: 2rem;
 }
 
+.upload-page-container {
+    min-height: 100vh;
+    padding: 12rem 5% 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.upload-page-container h1 {
+    font-size: 4.2rem;
+    font-weight: 800;
+    color: var(--main-color);
+    text-align: center;
+}
+
 .upload-page-container h3,
 .upload-page-container p {
     font-size: 1.9rem;
@@ -588,7 +604,7 @@ section.about > div {
     max-width: 800px;
 }
 
-.upload-form {
+.upload-page-container form {
     width: 100%;
     max-width: 650px;
     padding: 3.8rem;
@@ -600,7 +616,7 @@ section.about > div {
     margin-top: 1rem;
 }
 
-.upload-form label {
+.upload-page-container form label {
     font-size: 1.7rem;
     font-weight: 700;
     color: var(--main-color);
@@ -608,7 +624,7 @@ section.about > div {
     display: block;
 }
 
-.upload-form input[type="text"] {
+.upload-page-container form input[type="text"] {
     width: 100%;
     padding: 1.5rem;
     border-radius: 1rem;
@@ -621,12 +637,22 @@ section.about > div {
     transition: 0.3s ease;
 }
 
-.upload-form input[type="text"]:focus {
+.upload-page-container form input[type="text"]:focus {
     border-color: #ffc857;
     transform: scale(1.03);
+    outline: none;
 }
 
-.upload-form button {
+.upload-page-container .uploadcare--widget__button {
+    background: var(--main-color) !important;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1.4rem 2.6rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.upload-page-container form button {
     width: 100%;
     padding: 1.6rem;
     font-size: 1.9rem;
@@ -638,22 +664,18 @@ section.about > div {
     transition: 0.3s ease;
 }
 
-.upload-form button:hover {
+.upload-page-container form button:hover {
     transform: scale(1.05) translateY(-2px);
     background: #ffd36c;
-    box-shadow: 0 10px 25px rgba(255,200,87,0.45);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
 }
 
 @media (max-width: 480px) {
-    .pricing-title {
-        font-size: 3.3rem;
-    }
-
     .upload-page-container h1 {
         font-size: 3.2rem;
     }
 
-    .upload-form {
+    .upload-page-container form {
         padding: 2.6rem;
     }
 }
